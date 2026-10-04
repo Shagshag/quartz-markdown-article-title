@@ -1,0 +1,51 @@
+{
+  "name": "markdown-article-title",
+  "version": "1.0.0",
+  "description": "Article title component that renders inline Markdown (code, bold, italic) from the title.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Georges Cubas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shagshag/quartz-markdown-article-title"
+  },
+  "keywords": [
+    "quartz",
+    "quartz-plugin",
+    "article-title",
+    "component"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "sideEffects": false,
+  "quartz": {
+    "name": "markdown-article-title",
+    "displayName": "Markdown Article Title",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "MarkdownArticleTitle": {
+        "displayName": "Markdown Article Title",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 10
+      }
+    }
+  }
+}
